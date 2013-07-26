@@ -7,8 +7,8 @@
  
 ALIGN 4
 IDT:
-    .Length       dw 0
-    .Base         dd 0
+    .Length       dw 16*256-1
+    .Base         dq 0
  
 ; Function to switch directly to long mode from real mode.
 ; Identity maps the first 2MiB.
